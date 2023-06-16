@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout Transparente MercadoPago</title>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <link rel="stylesheet" href="src/checkout.css">
+</head>
+<!-- //DADOS PARA TESTE DE MÉTODO DE PAGAMENTO:
+
+//    Mastercard -    N°: 5031 4332 1540 6351 - CPF: 12345678909 - CVV: 123  -  MM/YY: 11/25 
+// American Express - N°: 5031 4332 1540 6351 - CPF: 12345678909 - CVV: 1234 -  MM/YY: 11/25 
+//       VISA -       N°: 4235 6477 2802 5682 - CPF: 12345678909 - CVV: 123  -  MM/YY: 11/25  -->
+<body>
+
+  <form id="form-checkout">
+    <h1>Cartão de Crédito</h1>
+    <input type="text" id="form-checkout__cardholderName" />
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <input type="text" id="form-checkout__identificationNumber" />
+
+    <div class="field-group">
+      <div id="form-checkout__expirationDate" class="container"></div>
+      <div id="form-checkout__securityCode" class="container"></div>
+      <select id="form-checkout__issuer"></select>
+    </div>
+    <select id="form-checkout__installments"></select>
+ 
+
+    <progress value="0" class="progress-bar">Loading...</progress>
+    <button type="submit" id="form-checkout__submit">Fazer Pagamento</button>
+    
+  </form>
+
+  <script src="src/script.js"></script>
+
+</body>
+</html>

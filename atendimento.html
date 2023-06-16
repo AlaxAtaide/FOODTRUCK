@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="icon/hotdog.png">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Dog no Molho</title>
+
+
+      <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.1.1/modules/scrollbar/scrollbar.min.css"
+     integrity="sha256-BOj/w0BvD88/C7Dd47erg7DyPELqL+5oeet5icjg+P8=" crossorigin="anonymous">
+
+</head>
+<body class="body">
+<header class="header-container">
+    <div class="logo-and-search">
+        <a class="logo">Dog no Molho</a>
+
+        <div class="search-box">
+          <div class="icon-js"></div>
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </div>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html" id="cancel">DOGS</a></li>
+            <li><a href="drinks.html" id="cancel">BEBIDAS</a></li>
+            <li><a href="atendimento.html" class="active" id="move">SUPORTE</a></li>
+        </ul>
+    </nav>
+
+    <img src="img/User.png" alt="" class="profile">
+    <p class="LoginButton" onclick="window.location.href='login.html'">LOGIN</p>
+
+
+      <img src="img/User.png" alt="" class="profile">
+      
+
+</header>
+
+<main>
+ 
+
+  <section class="mapa">
+    <h3 class="titulo-principal">Nosso estabelecimento</h3>
+    <h4>Nosso estabelecimento está localizado no coração da cidade.</h4>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.019481614759!2d-48.06327552399039!3d-16.0125013283653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93598074cd584c91%3A0x97f8dddbfb1801a2!2sCentro%20Ol%C3%ADmpico%20e%20Paral%C3%ADmpico%20de%20Gama!5e0!3m2!1spt-BR!2sbr!4v1685919590652!5m2!1spt-BR!2sbr" width="950" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+      <!-- ACCORDION DE PERGUNTAS E RESPOSTAS -->
+
+
+
+    <!-- PRIMEIRO FAQ -->
+
+    <div class="FAQ">
+      <h1>DÚVIDAS FREQUENTES:</h1>
+      <div class="container2">
+
+          <!-- SEGUNDO FAQ -->
+
+          <div class="FAQ">
+              <div class="question" id="question2">
+                  <a class="question-link" href="#question2">
+                      Onde fica localizado?
+                      <ion-icon class="add-outline" name="add-outline"></ion-icon>
+                      <ion-icon class="remove-outline" name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                      <p> Horário de funcionamento: 18h as 22h <br>
+                        Localizado na frente do Centro olímpico do Gama (DF).
+                      </p>
+                  </div>
+              </div>
+
+              <!-- TERCEIRO FAQ -->
+
+              <div class="FAQ">
+                  <div class="question" id="question3">
+                      <a class="question-link" href="#question3">
+                          Por onde posso falar com vocês?
+                          <ion-icon class="add-outline" name="add-outline"></ion-icon>
+                          <ion-icon class="remove-outline" name="remove-outline"></ion-icon>
+                      </a>
+                      <div class="answer">
+                          <p> Prestamos atendimento pelo instagram: @dognomolho
+                             
+                          </p>
+
+                      </div>
+                  </div>
+
+                  <!-- QUARTO FAQ -->
+
+                  <div class="FAQ">
+                      <div class="question" id="question4">
+                          <a class="question-link" href="#question4">
+                              Atendem finais de semana?
+                              <ion-icon class="add-outline" name="add-outline"></ion-icon>
+                              <ion-icon class="remove-outline" name="remove-outline"></ion-icon>
+                          </a>
+                          <div class="answer">
+                              <p> Sim, funcionamos de segunda a sábado, de 18h as 22h.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+  </main>
+
+  
+
+  
+<!-- BOTTOM NAVIGATION - MOBILE -->
+<div class="menubar">
+  <ul class="nav_list">
+      <li class="navigator">
+          <a href="index.html" class="nav_link">
+              <i class='bx bxs-food-menu nav_icon'></i>
+              <span class="nav_name">CARDAPIO</span>
+          </a>
+      </li>
+
+      <li class="navigator">
+          <a href="pedido.html" class="nav_link">
+              <i class='bx bx-cart nav_icon' ></i>
+              <span class="nav_name">PEDIDO</span>
+          </a>
+      </li>
+
+      <li class="navigator">
+          <a href="atendimento.html" class="nav_link">
+              <i class='bx bxs-user-voice nav_icon' ></i>
+              <span class="nav_name">SUPORTE</span>
+          </a>
+      </li>
+  </ul>
+</div>
+
+
+</body>  
+
+
+</html>

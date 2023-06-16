@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOG NO MOLHO</title>
+  <link rel="shortcut icon" type="image/x-icon" href="icon/hotdog.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/styleLogin.css">
+  <script src="https://sdk.twilio.com/js/client/v1.10/twilio.js"></script>
+  <script src="src/script.js"></script>
+</head>
+
+<body>
+  <!-- MENUBAR PARA DIRECIONAR A OUTRAS PÁGINAS -->
+  <div class="menu-bar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="pedido.html">CARRINHO</a></li>
+    </ul>
+  </div>
+  <div class="transition-overlay"></div>
+
+  <div class="container">
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="login-container">
+      <h1>CADASTRE-SE</h1>
+      <form id="login-form">
+        <div class="input-container">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" placeholder="Digite seu nome..." required>
+        </div>
+        <div class="input-container">
+          <input type="text" id="password" placeholder="Número de celular" required>
+          <i class="fas fa-phone"></i>
+        </div>
+        <p class="forgot-password">Já tem login? <a href="#">Clique aqui</a></p>
+        <button id="login-button" type="submit">Criar Conta</button>
+      </form>
+    </div>
+
+    <!-- Modal para o código de verificação -->
+    <div id="verification-modal" class="modal">
+      <div class="modal-content">
+        <h2>Confirme o código</h2>
+        <form id="confirmation-form">
+          <input type="text" id="verification-code" placeholder="Digite o código de verificação" required>
+          <button type="submit" class="confirmacao">Confirmar</button>
+        </form>
+      </div>
+    </div>
+
+    <img src="img/car.png" alt="Carro" class="car-image">
+  </div>
+</body>
+</html>

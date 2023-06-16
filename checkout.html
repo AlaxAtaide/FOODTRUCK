@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="icon/hotdog.png">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js"></script>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <title>Dog no Molho</title>
+
+    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="YOUR_PREFERENCE_ID"></script>
+
+        
+</head>
+
+<body class="body">
+
+  <!-- INICIA O CÓDIGO DO MENUBAR -->
+  <header class="header-container">
+      <div class="logo-and-search">
+          <a class="logo">Dog no Molho</a>
+  
+          <div class="search-box">
+            <div class="icon-js"></div>
+              <i class="uil uil-search"></i>
+              <input type="text" placeholder="Buscar...">
+          </div>
+      </div>
+      <nav class="nav">
+          <ul class="nav-links">
+              <li><a href="index.html" class="active">DOGS</a></li>
+              <li><a href="drinks.html">BEBIDAS</a></li>
+          </ul>
+      </nav>
+  
+        <img src="img/User.png" alt="" class="profile">
+        <a href="pedido.html">
+          <i class='bx bx-cart carrinho'></i>
+          <span class="qtdcarrinho"></span>
+          </a>
+  
+  </header>
+    
+    <div class="payment-options">
+        <div class="payment-option">
+          <i class="fa-solid fa-credit-card"></i>
+          <span>Cartão de crédito</span>
+        </div>
+        <div class="payment-option">
+          <i class="fa-regular fa-credit-card"></i>
+          <span>Cartão de débito</span>
+        </div>
+        <div class="payment-option">
+          <i class="fa-brands fa-pix"></i>
+          <span>PIX</span>
+        </div>
+      </div>
+        <!-- FINALIZA O CÓDIGO DO MENUBAR -->
+      
+
+<!-- CÓDIGO DO FORMULÁRIO DE CHECKOUT (CHECKOUT TRANSPARENTE)-->
+<form id="checkout-form">
+  <!-- Campos do formulário -->
+  <div class="form-group">
+    <label for="name">Nome Completo do titular</label>
+    <input type="text" id="name" placeholder="Digite seu nome completo" required>
+  </div>
+  <div class="form-group">
+    <label for="CPF">CPF</label>
+    <input type="text" id="CPF" placeholder="Digite seu CPF" required>
+  </div>
+  <div class="form-group">
+    <label for="card-number">Número do cartão</label>
+    <input type="text" id="card-number" placeholder="Digite o número do cartão" required>
+  </div>
+  <div class="form-group">
+    <label for="card-expiry">Validade do cartão (MM/AA)</label>
+    <input type="text" id="card-expiry" placeholder="Digite a validade do cartão" required>
+  </div>
+  <div class="form-group">
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" placeholder="Digite o CVV" required>
+  </div>
+   <!-- Botão de pagamento -->
+<button id="pay-button" type="button">Pagar</button>
+</form>
+
+<!-- Campo retangular com o custo total -->
+<div class="total-cost">
+  <span class="label">Custo Total:</span>
+  <span id="cost-value">
+    
+  </span>
+</div>
+
+
+
+<!-- Adicione o script para lidar com o pagamento -->
+<script src="payment.js"></script>
+
+      
+
+</body>
+
+
+</html>
